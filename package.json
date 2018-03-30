@@ -1,0 +1,30 @@
+{
+  "name": "unicornpowered-timesheet",
+  "version": "0.1.0",
+  "description": "UnicornPowered - Timesheet",
+  "main": "bin/www",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "express-async-handler": "^1.0.4",
+    "fs-extra": "^5.0.0",
+    "jsonwebtoken": "^8.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/UnicornPowered/timesheet.git"
+  },
+  "keywords": [
+    "nodejs-jwt"
+  ],
+  "author": "Eric Pinet",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/UnicornPowered/timesheet/issues"
+  },
+  "homepage": "https://gitlab.com/UnicornPowered/timesheet#README"
+}
