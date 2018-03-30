@@ -2,7 +2,7 @@
 
 Nodejs app with [expressjs](http://expressjs.com/) RESTAPI and [JSON Web Token](https://jwt.io/) to check authentification sample.
 
-## Before start
+## Before the start
 
 Clone this repository and run:
 
@@ -36,7 +36,7 @@ Use that token to send next request to the API at [http://localhost:8080/api/hel
 curl -H "Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJpYXQiOjE1MjI0MjEyODAsImV4cCI6MTUyMjQyNDg4MH0.Lt4zggS4xv_nFru_Vvob_S1KGIAHth_ifxr6g4VN5R0" -X GET "http://localhost:8080/api/helloworld"
 ```
 
-The server check if a valid token is present in Authorization header and return a Helloworld:
+The server check if a valid token is present in Authorization header and returns a HelloWorld:
 
 ```json
 {"message":"Helloworld"}
@@ -48,7 +48,7 @@ Try with an invalid token:
 curl -H "Authorization: wrong-token" -X GET "http://localhost:8080/api/helloworld"
 ```
 
-The server return a token error:
+The server returns a token error:
 
 ```json
 {"error":"Failed to authenticate token!"}
@@ -94,7 +94,7 @@ module.exports = function (req, res, next) {
 };
 ```
 
-Add this middleware on the /api/ route in *app.js*.
+Add this middleware to the /api/ route in *app.js*.
 
 ```javascript
 // ./app.js
